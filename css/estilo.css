@@ -34,7 +34,6 @@
             }
 
             .item { /* * Flex Box */
-                padding: 10px;
                 margin: 5px 30px 5px 30px;
             } 
             
@@ -90,3 +89,76 @@
                 border: 2px solid white;
                 cursor: pointer;
             }
+
+            #img {
+                border-radius: 15px;
+                box-shadow: 5px 5px 15px gray;
+            }
+
+            /* Maioria dos smartphones */
+      @media (min-width: 320px) and (max-width: 480px)  {
+          .container {
+              flex-direction: column-reverse;
+          }
+
+          .index1, .index2 {
+              width: 100%;
+              margin-right: 10px;
+          }
+
+          .item {
+              margin: 10px;
+              align-items: center;
+          }
+
+          label[for=”bt_menu”] {
+            display: block;
+            }
+             
+           #bt_menu:checked ~ .menu{
+            margin-left: 0;
+            }
+             
+           .menu{
+            margin-top: 5px;
+            margin-left: -100%;
+            transition: all .4s;
+            }
+             
+           .menu ul li {
+            width: 100%;
+            float: none;
+            }
+             
+           .menu ul ul {
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all 4s;
+            z-index: 9;
+            }
+             
+           .menu ul li:hover ul {
+            height: auto;
+            max-height: 200px;
+            }
+
+
+      /* Tablets de baixa resolução e celulares */
+      @media (min-width: 481px) and (max-width: 767px)  {
+         
+      }      
+
+      /*tablets grandes */
+      @media (min-width: 768px) and (max-width: 1024px)  {
+     
+      }         
+
+      /* Para impressão - ctrl+P */
+      @media print {
+
+      }  
+
+      @media speech {
+
+      }  
