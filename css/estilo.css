@@ -1,4 +1,4 @@
-    /* ! Aqui jaz toda a linha de código destinada ao CSS do estilo geral */
+    /* * Aqui jaz toda a linha de código destinada ao CSS do estilo geral */
 
 
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&family=Oswald&display=swap');
@@ -101,14 +101,13 @@
               flex-direction: column-reverse;
           }
 
-          .index1, .index2 {
-              width: 100%;
-              margin-right: 10px;
+          .item {
+            width: 100%;
+            margin: 10px;
           }
 
-          .item {
-              margin: 10px;
-              align-items: center;
+          hr{
+            width: 100%;
           }
 
           label[for=”bt_menu”] {
@@ -142,6 +141,7 @@
             height: auto;
             max-height: 200px;
             }
+            
 
 
       /* Tablets de baixa resolução e celulares */
@@ -161,4 +161,6 @@
 
       @media speech {
 
-      }  
+      }
+    
+    }
