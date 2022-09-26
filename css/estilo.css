@@ -95,6 +95,11 @@
                 box-shadow: 5px 5px 15px gray;
             }
 
+            #tabela{
+                overflow-x: auto;
+                width: 100%;
+            }
+
             /* Maioria dos smartphones */
       @media (min-width: 320px) and (max-width: 480px)  {
           .container {
@@ -102,12 +107,8 @@
           }
 
           .item {
-            width: 100%;
+            width: 90%;
             margin: 10px;
-          }
-
-          hr{
-            width: 100%;
           }
 
           label[for=”bt_menu”] {
@@ -141,16 +142,81 @@
             height: auto;
             max-height: 200px;
             }
-            
+
+            #tabela{
+                overflow-x: auto;
+            }
+
+            .button{
+                margin-left: 32vw;
+            }
+        } 
 
 
       /* Tablets de baixa resolução e celulares */
       @media (min-width: 481px) and (max-width: 767px)  {
-         
-      }      
+
+        .container {
+            flex-direction: column-reverse;
+        }
+
+        .item {
+          width: 90%;
+          margin: 10px;
+        }
+
+        label[for=”bt_menu”] {
+          display: block;
+          }
+           
+         #bt_menu:checked ~ .menu{
+          margin-left: 0;
+          }
+           
+         .menu{
+          margin-top: 5px;
+          margin-left: -100%;
+          transition: all .4s;
+          }
+           
+         .menu ul li {
+          width: 100%;
+          float: none;
+          }
+           
+         .menu ul ul {
+          position: static;
+          overflow: hidden;
+          max-height: 0;
+          transition: all 4s;
+          z-index: 9;
+          }
+           
+         .menu ul li:hover ul {
+          height: auto;
+          max-height: 200px;
+          }
+
+          #tabela{
+              overflow-x: auto;
+          }
+
+          .button{
+              margin-left: 32vw;
+          }
+      }       
 
       /*tablets grandes */
       @media (min-width: 768px) and (max-width: 1024px)  {
+
+        .container {
+            flex-direction: column;
+        }
+
+        .item {
+          width: 90%;
+          margin: 10px;
+        }
      
       }         
 
@@ -163,4 +229,4 @@
 
       }
     
-    }
+    
