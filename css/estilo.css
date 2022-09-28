@@ -1,232 +1,221 @@
     /* * Aqui jaz toda a linha de código destinada ao CSS do estilo geral */
-
-
+    
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&family=Oswald&display=swap');
-
-            h1 {
-                font-family: 'Bebas Neue', cursive;
-                text-shadow: 3px 3px 2px black;
-            }
-
-            body {
-                font-family: 'Oswald', sans-serif;
-                color:  #FFFFFF;
-                font-size: 20px;
-                background: linear-gradient(0deg, #1a1a1a 0%, #2e2e2e 50%, #4b4b4b 100%);
-                margin: 0px;
-                padding: 0px;
-            }
-
-            p {
-                padding: 5px 10px;
-                text-align: justify;
-            }
-
-            .justalign {
-                text-align: center;
-            }
-
-            .container { /* * Flex Box */
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-            }
-
-            .item { /* * Flex Box */
-                margin: 5px 30px 5px 30px;
-            } 
-            
-            .index1 { /* * Flex Box */
-                width: 70%;
-            }
-            
-            .index2 { /* * Flex Box */
-                width: 30%;
-            }
-
-            a {
-                color: #868686;
-            }
-
-            .li {
-                color: #bbbbbb;
-            }
-
-            tr {
-                text-align: center
-            }
-            
-            footer {
-                background-color: rgb(23,23,23);
-                text-align: center;
-                align-items: center;
-                color: #525252;
-                font-size: 16px
-            }
-
-            #imgT {
-                text-align: center;
-                align-items: center;
-            }
-
-            /* Voltar ao Topo */
-
-            .button {
-                background-color: transparent;
-                color: rgb(251, 251, 251);
-                border: 2px solid #555555;
-                font-size: 25px;
-                font-family: 'Oswald', cursive;
-                margin-left: 46%;
-                padding: 5px 10px 5px 10px;
-            }
-            
-            .button:hover {
-                background-color: #555555;
-                color: white;
-                transition: 1s;
-                border: 2px solid white;
-                cursor: pointer;
-            }
-
-            #img {
-                border-radius: 15px;
-                box-shadow: 5px 5px 15px gray;
-            }
-
-            #tabela{
-                overflow-x: auto;
-                width: 100%;
-            }
-
-            /* Maioria dos smartphones */
-      @media (min-width: 320px) and (max-width: 480px)  {
-          .container {
-              flex-direction: column-reverse;
-          }
-
-          .item {
-            width: 90%;
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        text-shadow: 3px 3px 2px black;
+    }
+    
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: #FFFFFF;
+        font-size: 20px;
+        background: linear-gradient(0deg, #1a1a1a 0%, #2e2e2e 50%, #4b4b4b 100%);
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    .justalign {
+        text-align: center;
+    }
+    
+    .container {
+        /* * Flex Box */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    
+    .item {
+        /* * Flex Box */
+        margin: 5px 30px 5px 30px;
+    }
+    
+    .index1 {
+        /* * Flex Box */
+        width: 70%;
+    }
+    
+    .index2 {
+        /* * Flex Box */
+        width: 30%;
+    }
+    
+    a {
+        color: #868686;
+    }
+    
+    .li {
+        color: #bbbbbb;
+    }
+    
+    tr {
+        text-align: center
+    }
+    
+    footer {
+        background-color: rgb(23, 23, 23);
+        text-align: center;
+        align-items: center;
+        color: #525252;
+        font-size: 16px
+    }
+    
+    #imgT {
+        text-align: center;
+        align-items: center;
+    }
+    /* Voltar ao Topo */
+    
+    .button {
+        background-color: transparent;
+        color: rgb(251, 251, 251);
+        border: 2px solid #555555;
+        font-size: 25px;
+        font-family: 'Oswald', cursive;
+        /* margin-left: 46%; */
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .button:hover {
+        background-color: #555555;
+        color: white;
+        transition: 1s;
+        border: 2px solid white;
+        cursor: pointer;
+    }
+    
+    #img {
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px gray;
+    }
+    
+    #tabela {
+        overflow-x: auto;
+        width: 100%;
+    }
+    
+    figcaption {
+        text-align: center;
+    }
+    
+    .imag {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #a img {
+        width: 50%;
+    }
+    /* Maioria dos smartphones */
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+        .container {
+            flex-direction: column-reverse;
+        }
+        .item {
+            width: 100%;
             margin: 10px;
-          }
-
-          label[for=”bt_menu”] {
+        }
+        label[for=”bt_menu”] {
             display: block;
-            }
-             
-           #bt_menu:checked ~ .menu{
+        }
+        #bt_menu:checked~.menu {
             margin-left: 0;
-            }
-             
-           .menu{
+        }
+        .menu {
             margin-top: 5px;
             margin-left: -100%;
             transition: all .4s;
-            }
-             
-           .menu ul li {
+        }
+        .menu ul li {
             width: 100%;
             float: none;
-            }
-             
-           .menu ul ul {
+        }
+        .menu ul ul {
             position: static;
             overflow: hidden;
             max-height: 0;
             transition: all 4s;
             z-index: 9;
-            }
-             
-           .menu ul li:hover ul {
+        }
+        .menu ul li:hover ul {
             height: auto;
             max-height: 200px;
-            }
-
-            #tabela{
-                overflow-x: auto;
-            }
-
-            .button{
-                margin-left: 32vw;
-            }
-        } 
-
-
-      /* Tablets de baixa resolução e celulares */
-      @media (min-width: 481px) and (max-width: 767px)  {
-
+        }
+        #tabela {
+            overflow-x: auto;
+        }
+        #a img {
+            width: 100%;
+        }
+    }
+    /* Tablets de baixa resolução e celulares */
+    
+    @media (min-width: 481px) and (max-width: 767px) {
         .container {
             flex-direction: column-reverse;
+            justify-content: center;
         }
-
         .item {
-          width: 90%;
-          margin: 10px;
+            width: 90%;
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
-
         label[for=”bt_menu”] {
-          display: block;
-          }
-           
-         #bt_menu:checked ~ .menu{
-          margin-left: 0;
-          }
-           
-         .menu{
-          margin-top: 5px;
-          margin-left: -100%;
-          transition: all .4s;
-          }
-           
-         .menu ul li {
-          width: 100%;
-          float: none;
-          }
-           
-         .menu ul ul {
-          position: static;
-          overflow: hidden;
-          max-height: 0;
-          transition: all 4s;
-          z-index: 9;
-          }
-           
-         .menu ul li:hover ul {
-          height: auto;
-          max-height: 200px;
-          }
-
-          #tabela{
-              overflow-x: auto;
-          }
-
-          .button{
-              margin-left: 32vw;
-          }
-      }       
-
-      /*tablets grandes */
-      @media (min-width: 768px) and (max-width: 1024px)  {
-
+            display: block;
+        }
+        #bt_menu:checked~.menu {
+            margin-left: 0;
+        }
+        .menu {
+            margin-top: 5px;
+            margin-left: -100%;
+            transition: all .4s;
+        }
+        .menu ul li {
+            width: 100%;
+            float: none;
+        }
+        .menu ul ul {
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all 4s;
+            z-index: 9;
+        }
+        .menu ul li:hover ul {
+            height: auto;
+            max-height: 200px;
+        }
+        #tabela {
+            overflow-x: auto;
+        }
+        #a img {
+            width: 100%;
+        }
+    }
+    /*tablets grandes */
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
         .container {
             flex-direction: column;
+            justify-content: center;
         }
-
         .item {
-          width: 90%;
-          margin: 10px;
+            width: 95%;
+            margin: 10px;
+            padding-left: 10px;
         }
-     
-      }         
-
-      /* Para impressão - ctrl+P */
-      @media print {
-
-      }  
-
-      @media speech {
-
-      }
+    }
+    /* Para impressão - ctrl+P */
     
+    @media print {}
     
+    @media speech {}

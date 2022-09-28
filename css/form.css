@@ -1,61 +1,95 @@
 /* ! Aqui jaz toda a linha de código destinada ao CSS do formulário */
 
-
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px;
     box-sizing: border-box;
     border: 2px solid #625555;
-    -webkit-transition: 0,7s;
-    transition: 0,5s;
+    -webkit-transition: 0, 7s;
+    transition: 0, 5s;
     outline: none;
     border-radius: 6px;
     font-weight: bold;
-  }
+}
 
-  #total {
+#total {
     background-color: rgba(0%, 0%, 0%, 0);
-     color: white;
-     font-weight: bold;
-     border-color: rgba(0%, 0%, 0%, 0);
-     font-size: 25px;
-     padding: 8px 0px;
-     margin: 0px;
-  }
-  
-  input:focus,select:focus {
-    border: 3px solid #44679e;
-  }
+    color: white;
+    font-weight: bold;
+    border-color: rgba(0%, 0%, 0%, 0);
+    font-size: 25px;
+    padding: 8px 0px;
+    margin: 0px;
+}
 
-  .fcontainer { /* * Flex Box */
+input:focus,
+select:focus {
+    border: 3px solid #44679e;
+}
+
+.fcontainer {
+    /* * Flex Box */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-  }
+    margin-right: 20px;
+}
 
-  .fitem { /* * Flex Box */
+.acontainer {
+    /* * Flex Box */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.fitem {
+    /* * Flex Box */
     padding: 5px;
     margin: 5px;
-  }
+}
 
-  .form1 { /* * Flex Box */
-      width: 65%;
-  }
+.form1 {
+    /* * Flex Box */
+    width: 65%;
+}
 
-  .form2 { /* * Flex Box */
-      width: 35%;
-  }
+.form2 {
+    /* * Flex Box */
+    width: 35%;
+}
 
-  .button1 { /* * Flex Box */
+.button1 {
+    /* * Flex Box */
     width: 49%;
-  }
+}
 
-  .button2 { /* * Flex Box */
+.button2 {
+    /* * Flex Box */
     width: 49%;
-  }
+}
 
-  .divbutton { /* * Flex Box */
+.divbutton {
+    /* * Flex Box */
     width: 2%;
-  }
+}
+
+@media (max-width: 1024px) {
+    .fcontainer {
+        display: block;
+    }
+    input {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+        margin: 10px;
+    }
+    .form1,
+    .form2 {
+        width: 100%;
+    }
+}
