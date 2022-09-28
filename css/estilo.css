@@ -216,6 +216,10 @@
     }
     /* Para impressão - ctrl+P */
     
-    @media print {}
+    @media print {
+        body {
+            background-color: #FFFFFF;
+        }
+    }
     
     @media speech {}
