@@ -26,8 +26,10 @@
     .container {
         /* * Flex Box */
         display: flex;
+        -ms-flex-direction: row;
         flex-direction: row;
         flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
         justify-content: space-around;
     }
     
@@ -62,6 +64,7 @@
         background-color: rgb(23, 23, 23);
         text-align: center;
         align-items: center;
+        -webkit-align-items: center;
         color: #525252;
         font-size: 16px
     }

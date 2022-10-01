@@ -1,0 +1,14 @@
+- Pseudo-classes:
+    • Podem ser encontradas pseudo-classes nos arquivos estilo.css, form.css e dropdownbar.css da pasta css. (Hover, focus, active)
+- Formatação de forms:
+    • O formulário formatado pode ser encontrado nos arquivos form.html e form.css (pasta css).
+- Box-shadow
+    • Box-shadow pode ser encontrado nas imagens de todas as páginas.
+- Gradientes 
+    • Pode ser encontrado no background de todas as páginas.
+- Transições/animações
+    • Pode ser encontradas nas imagens e subtítulo ("Pela ordem dos Peaky Blinders") de todas as páginas.
+- Prefixos
+    • Prefixos estão presentes no arquivo estilo.css e form.css (pasta css).
+- Flexbox (pelo menos 3 propriedades)
+    • Pode ser encontradas propriedades nos arquivos form.css e estilo.css (pasta css).
